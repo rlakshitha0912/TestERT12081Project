@@ -14,7 +14,7 @@ packages:
   gitUsername: rlakshitha0912
   gitBranch: main
 services:
-- serviceName: project.testert12081.integrations:adapters
+- serviceName: project.testert12081.integrations:dateTestERT08
   packages:
   - name: TestERT12081Project
     version: "1.0"
@@ -24,11 +24,7 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: softwareag
-- serviceName: services:Insert
+- serviceName: pub.date:getCurrentDate
   packages:
-  - name: Adapters_Sephali
-    version: "1.0"
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: softwareag
+  - name: WmPublic
+    version: 11.1.0.0.1134

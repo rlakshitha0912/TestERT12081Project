@@ -8,16 +8,27 @@ packages:
   gitUsername: rlakshitha0912
   gitBranch: main
 - name: Adapters_Sephali
+  version: "1.0"
   gitServerName: rlakshitha0912
   gitUrl: https://github.com/rlakshitha0912
   gitUsername: rlakshitha0912
   gitBranch: main
 services:
-- serviceName: project.testert12081.integrations:date
+- serviceName: project.testert12081.integrations:adapters
   packages:
   - name: TestERT12081Project
     version: "1.0"
-- serviceName: pub.date:getCurrentDate
+  - name: Adapters_Sephali
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: softwareag
+- serviceName: services:Insert
   packages:
-  - name: WmPublic
-    version: 11.1.0.0.1134
+  - name: Adapters_Sephali
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: softwareag
